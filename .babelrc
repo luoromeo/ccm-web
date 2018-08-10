@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["es2015", { "modules": false }],
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-export-extensions",
+    [
+      "transform-runtime", {
+        "polufill": false,
+        "regenerator": true
+      }
+    ]
+  ]
+}
