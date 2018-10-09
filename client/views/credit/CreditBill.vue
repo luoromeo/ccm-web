@@ -426,7 +426,7 @@ export default {
   },
   watch: {
     'payment.paymentRecord.type': async function (n, o) {
-      if (n === 1) {
+      if (n === '1') {
         const response = await this.axios.get('/creditAccount')
         this.creditAccountList = response.data.data
         const borrowChannelsResult = await this.axios.get('/borrowChannels')

@@ -96,7 +96,7 @@
     <Modal title="借款" v-model="addBillModal" @on-ok="cofirmBorrowRecord" @on-visible-change="initFormData" :loading=true>
       <Form :model="borrowRecord" label-position="right" :label-width="100">
         <FormItem label="借款金额">
-            <Input v-model="borrowRecord.money" :number=true style="width: 280px"></Input>
+            <Input v-model="borrowRecord.money" :number=true style="width: 280px"/>
         </FormItem>
         <FormItem label="借款账户">
             <Select v-model="borrowRecord.creditAccount.id" style="width: 280px">
